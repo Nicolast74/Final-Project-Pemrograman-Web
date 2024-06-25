@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jogja Travel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+      /* Style untuk navbar */
+      .navbar-nav .nav-link,
+      .navbar-nav .btn {
+        margin-right: 20px;
+        /* Atur jarak antara setiap elemen menjadi 20px */
+      }
+
+      /* Gaya untuk gambar */
+      .rounded-image {
+        width: 60%; /* Lebar gambar */
+        border-radius: 10px; /* Menambahkan radius sudut */
+      }
+
+      .header {
+        color: #290964;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      /* Gaya untuk tab navigasi */
+      .nav-tabs {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-bottom: none;
+      }
+
+      .nav-tabs .nav-item {
+        text-align: center;
+      }
+
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+        border-bottom: 2px solid #007bff; /* Garis bawah untuk tab yang aktif */
+      }
+
+      .nav-item img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .review img {
+        width: 100%;
+        height: auto;
+      }
+
+      .map iframe {
+        width: 100%;
+        height: 400px;
+        border: 0;
+      }
+
+      /* Menambahkan kotak biru */
+      .info-container {
+        border: 2px solid #007bff; /* Garis kotak biru */
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      /* Menambahkan border ke dalam kelas review dan map yang terkait dengan kota Yogyakarta */
+      .review-yogya,
+      .map-yogya {
+        margin-bottom: 20px; /* Menambahkan margin bawah 20px */
+      }
+
+      .footer {
+        background-color: #290964;
+        color: white;
+        padding: 20px 0;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+      }
+
+      .footer hr {
+        border-top: 1px solid #fff;
+      }
+
+      /* CSS untuk menambahkan jarak antara kotak informasi Yogyakarta dan peta Yogyakarta */
+      .info-yogya {
+        margin-bottom: 20px; /* Tambahkan jarak bawah 20px */
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="index.html"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="about.html"><b>About</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="contact.html"><b>Contact</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="info.html"><b>Info</b></a>
+              </li>
+              <button type="button" class="btn btn-light rounded">
+                <b>Sign In</b>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="header">Informasi dari berbagai Daerah</div>
+    <!--Tab navigasi-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><img src="assets/image/image 4.png" alt="Home" /> Gunung Kidul</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="assets/image/image 3.png" alt="Profile" /> Sleman</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="assets/image/image 13.png" alt="Messages" /> Jogja Kota</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="assets/image/image 10.png" alt="Settings" /> Bantul</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="assets/image/image 8.png" alt="Help" /> Kulon Progo</a>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="info-container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm p-1">
+              <div class="review review-yogya">
+                <h2>Review</h2>
+                <img src="assets/image/image 27.png" alt="Review Image" />
+                <p>Nama: Malioboro, Kota Baru, Kepatihan, Pakualaman, Kotabaru</p>
+                <p>Jenis Wisata: Wisata Budaya</p>
+                <p>Deskripsi: Salah satu kawasan wisata yang terkenal di Yogyakarta...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="info-yogya">
+              <h2>Kota Yogyakarta</h2>
+              <div class="card border-0 shadow-sm p-1">
+                <div class="row">
+                  <div class="col-md-7">
+                    <img src="assets/image/Titik 0.jpg" alt="Yogyakarta Image" class="img-fluid" />
+                    <p>
+                      Kota Yogyakarta adalah. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cumque eaque in at fugit esse velit explicabo a accusamus aliquid, exercitationem necessitatibus pariatur ipsa ipsam cum,
+                      asperiores atque inventore delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi reprehenderit nihil quae optio natus consequatur iusto, error, incidunt dignissimos perferendis, at sit
+                      deserunt! Harum tempora voluptates voluptatibus atque placeat!
+                    </p>
+                  </div>
+                  <div class="col-md-5">
+                    <p>
+                      Kota Yogyakarta adalah. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cumque eaque in at fugit esse velit explicabo a accusamus aliquid, exercitationem necessitatibus pariatur ipsa ipsam cum,
+                      asperiores atque inventore delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi reprehenderit nihil quae optio natus consequatur iusto, error, incidunt dignissimos perferendis, at sit
+                      deserunt! Harum tempora voluptates voluptatibus atque placeat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam harum numquam iusto quos ut facilis, itaque esse maiores. Molestiae vero iusto cumque earum
+                      quia odit corrupti saepe nesciunt veritatis quisquam! lorem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit obcaecati libero saepe quisquam! Adipisci perspiciatis ullam quo, enim maxime placeat
+                      perferendis quod dignissimos, temporibus optio numquam a eveniet dolor aperiam?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Peta Kota Yogyakarta -->
+            <div class="map map-yogya">
+              <div class="shadow p-3 mb-5 bg-white rounded">
+                <h2>Peta Kota Yogyakarta</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.508712784283!2d110.36497721437813!3d-7.801338979823174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a578bb64dfad7%3A0xb372a7f0d0c16db0!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1599183943510!5m2!1sen!2sid"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer text-white py-3" style="background-color: #290964">
+      <div class="container">
+        <hr class="mt-4" />
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Reach us</h5>
+            <p><i class="fa-solid fa-phone-volume"></i> 08222223</p>
+            <p><i class="fa-solid fa-envelope"></i> Explore Jogja</p>
+            <p><i class="fa-solid fa-location-dot"></i> Jogja</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Company</h5>
+            <p><a href="about.html" style="color: inherit; text-decoration: none">About</a></p>
+            <p><a href="contact.html" style="color: inherit; text-decoration: none">Contact</a></p>
+          </div>
+          <div class="col-md text-end">
+            <h5>Legal</h5>
+            <p>Privacy Policy</p>
+            <p>Terms & Services</p>
+            <p>Legal</p>
+            <p>Refund Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  </body>
+</html>

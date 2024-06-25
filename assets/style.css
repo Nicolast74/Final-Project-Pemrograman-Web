@@ -1,0 +1,60 @@
+
+        .navbar-nav .nav-link,
+        .navbar-nav .btn {
+          margin-right: 20px;
+          /* Atur jarak antara setiap elemen menjadi 10px */
+        }
+    
+        .form-control-underlined {
+          border: none;
+          border-bottom: 1px solid #ced4da;
+          border-radius: 0;
+          padding-left: 0;
+        }
+    
+        .form-control-underlined:focus {
+          border-bottom: 1px solid #000000;
+          box-shadow: none;
+        }
+    
+        .social-icon {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #333;
+          color: #fff;
+          transition: background-color 0.3s ease;
+        }
+    
+        .social-icon:hover {
+          background-color: #fff;
+          color: #333;
+        }
+
+        .container {
+          border: 1px solid blue; /* Membuat garis tepi berwarna biru */
+          padding: 10px; /* Memberikan jarak antara garis tepi dan isi */
+          width: 2000px; /* Mengatur lebar elemen */
+          margin:  auto; /* Memusatkan elemen di halaman */
+          
+        }
+
+        .container {
+          text-align: center; /* Memusatkan logo dan nama */
+        }
+
+        .logo {
+          width: 200px; /* Atur lebar logo */
+          margin-bottom: 20px; /* Memberikan jarak antara logo dan nama */
+        }
+
+        .nama {
+          color: blue; /* Atur warna nama */
+        }
+
+        .social-icon i {
+          font-size: 18px;
+        }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jogja Travel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        
+        .navbar-nav .nav-link,
+        .navbar-nav .btn {
+            margin-right: 20px;
+            /* Atur jarak antara setiap elemen menjadi 20px */
+        }
+        /*body {
+            background-color: #b0c1d3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }*/
+        
+        .titel-box {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center;
+            font-family: "Inter", sans-serif; 
+        }
+        .titel-box h1 {
+            margin: 0; 
+            padding: 0;
+            font-weight: bold;
+        }
+        .isi-box {
+            background-color: white;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 5);
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            font-family: "Inter ", sans-serif; 
+        }
+        .isi-box img {
+            width: 800px; 
+            height: auto; 
+            border-radius: 5px;
+            box-shadow: 15px 20px 10px rgba(0, 0 , 0, 35 );
+        }
+        .deskripsi {
+            margin-top: 20px; 
+            width: 100%;
+        }
+        .gambar-judul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .gambar-judul h3 {
+            margin-left: 20px;
+        }
+        .rating {
+            color: orange; 
+        }
+        .rating .star {
+            font-size: 60px; 
+            cursor: pointer;
+        }
+        .isi-box p {
+            font-size: 18px; 
+        }
+        .ulasan-box {
+            background-color: transparent;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px 0;
+            font-family: "Inter ", sans-serif;
+        }
+        .komen-box {
+            background-color: transparent;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px 0;
+            font-family: "Inter ", sans-serif;
+        }
+        .btn-primary-custom {
+            background-color: #003C82;
+            border-color: #003C82;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .btn-primary-custom:hover {
+            background-color: #002a5c;
+            border-color: #002a5c;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .form-group label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .label-rating {
+        display: flex;
+        align-items: center;
+        }
+        .label-rating label {
+        margin-right: 20px;
+        font-size: 15px;
+        }
+        .transparent-bg {
+            background-color: transparent !important;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .komen-box .rating {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        direction: ltr;
+        }
+        .komen-box .star {
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .komen-box .star:hover,
+        .komen-box .star.active {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item "><a class="nav-link font-weight-bold" href="#"><b>Home</b></a></li>
+                <li class="nav-item "><a class="nav-link font-weight-bold" href="#"><b>About</b></a></li>
+                <li class="nav-item "><a class="nav-link font-weight-bold" href="#"><b>Contact</b></a></li>
+                <li class="nav-item "><a class="nav-link font-weight-bold" href="#"><b>Info</b></a></li>
+                <button type="button" class="btn btn-light rounded"><b>Sign In</b></button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class ="titel-box">
+        <h1> Pantai Gunung Kidul</h1>
+    </div>
+    <div class="container">
+    <div class="isi-box text-center">
+        <img src="assets/image/pantai.jpg" alt="Pantai">
+        <div class="deskripsi">
+          <h1>Jungwook</h1>
+          <div class="rating" id="displayRating">
+            <!-- Rating akan ditampilkan di sini -->
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p>Nuansa pantai adalah suatu kumpulan sensasi yang merangkum keindahan alam, aroma laut yang segar, dan ketenangan yang mendalam. 
+            Saat memasuki pantai, angin sepoi-sepoi laut menyapa dengan lembut,
+             membawa aroma asin dari ombak yang memukul pantai. 
+            Pasir putih yang lembut di bawah kaki, hangatnya
+             sinar matahari yang menyentuh kulit, dan suara gemericik air yang berirama menenangkan menjadi bagian
+             tak terpisahkan dari pengalaman di tepi laut. Nuansa pantai juga mencakup beragam warna yang memukau,
+             mulai dari biru laut yang tenang hingga hijau jernih dari air yang mengalir di atas terumbu karang yang berwarna-warni.
+            Ketika mata memandang ke cakrawala, panorama yang terbentang luas memukau dengan keindahan alami yang tiada tara.
+             Pemandangan matahari terbenam memperlihatkan perpaduan warna-warni yang memukau, menciptakan latar belakang yang
+             indah bagi perjalanan langit yang berubah warna dari biru langit terang menjadi oranye dan merah yang menyala..</p>
+        </div>
+      </div>
+  </div>
+    </div>
+</div>
+<div class="container">
+    <div class="ulasan-box text-center">
+        <h2>Tulis Ulasan</h2>
+        <form>
+            <div class="form-group">
+                <textarea class="form-control transparent-bg" id="review" placeholder="Tulis ulasan Anda di sini" rows="5"></textarea>
+            </div>
+            <div class="komen-box">
+            <div class="form-group">
+            <div class="label-rating">
+                <label for="rating">Berikan bintang pada tempat yang telah Anda kunjungi</label>
+                    <div id="rating" class="rating">
+                        <input type="hidden" name="rating" id="rating-value" value="0">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <button type="send" class="btn btn-primary btn-primary-custom">Kirimkan</button>
+        </form>
+    </div>
+</div>
+<footer class="footer text-white py-3" style="background-color: #290964">
+    <div class="container">
+        <hr class="mt-4" />
+        <div class="row">
+            <div class="col-md-5">
+                <h5>Reach us</h5>
+                <p><i class="fa-solid fa-phone-volume"></i> 08222223</p>
+                <p><i class="fa-solid fa-envelope"></i> Explore Jogja</p>
+                <p><i class="fa-solid fa-location-dot"></i> Jogja</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Company</h5>
+                <p><a href="about.html" style="color: inherit; text-decoration: none">About</a></p>
+                <p><a href="contact.html" style="color: inherit; text-decoration: none">Contact</a></p>
+            </div>
+            <div class="col-md text-end">
+                <h5>Legal</h5>
+                <p>Privacy Policy</p>
+                <p>Terms & Services</p>
+                <p>Legal</p>
+                <p>Refund Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+6k7uwj0DI9+2C7Qu/5Y5ZW6N9pke" crossorigin="anonymous"></script>
+</body>
+</html>
