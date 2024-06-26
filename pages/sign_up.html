@@ -62,7 +62,7 @@
             cursor: pointer;
             position: absolute;
             top: 50%;
-            right: 20px;
+            right: 10px;
             transform: translateY(-50%);
             display: flex;
             align-items: center;
@@ -102,6 +102,15 @@
             margin-top: -10px;
             margin-bottom: 10px;
         }
+        .password-container {
+            position: relative;
+        }
+        .password-container input {
+            padding-right: 60px;
+        }
+        .password-container .toggle-password {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -109,31 +118,31 @@
         <h2 class="text-center">Create an account</h2>
         <form>
             <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
-            <div class="form-group">
-                <label for="password">
-                    Password
-                    <span class="toggle-password" onclick="togglePassword('password', 'togglePasswordIcon', 'togglePasswordText')">
-                        <img src="assets/image/show.png" id="togglePasswordIcon">
-                        <span id="togglePasswordText">Show</span>
-                    </span>
-                </label>
+            <div class="form-group password-container">
+                <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password">
+                <span class="toggle-password" onclick="togglePassword('password', 'togglePasswordIcon', 'togglePasswordText')">
+                    <img src="assets/image/show.png" id="togglePasswordIcon">
+                    <span id="togglePasswordText">Show</span>
+                </span>
             </div>
             <div class="password-hint">
                 Use 8 or more characters with a mix of letters, numbers & symbols
             </div>
-            <div class="form-group">
-                <label for="confirm-password">
-                    Confirm Password
-                    <span class="toggle-password" onclick="togglePassword('confirm-password', 'toggleConfirmPasswordIcon', 'toggleConfirmPasswordText')">
-                        <img src="assets/image/show.png" id="toggleConfirmPasswordIcon">
-                        <span id="toggleConfirmPasswordText">Show</span>
-                    </span>
-                </label>
+            <div class="form-group password-container">
+                <label for="confirm-password">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                <span class="toggle-password" onclick="togglePassword('confirm-password', 'toggleConfirmPasswordIcon', 'toggleConfirmPasswordText')">
+                    <img src="assets/image/show.png" id="toggleConfirmPasswordIcon">
+                    <span id="toggleConfirmPasswordText">Show</span>
+                </span>
             </div>
             <button type="submit" class="btn btn-primary btn-primary-custom">Sign Up</button>
             <button type="button" class="btn btn-outline-custom">
